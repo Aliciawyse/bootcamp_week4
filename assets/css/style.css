@@ -1,0 +1,42 @@
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid darkseagreen;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background: sandybrown;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+#rectangle {
+    width: 200px;
+    height: 100px;
+    background: cornflowerblue;
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+}
+
+div {
+    margin: 1%;
+    display: inline-block;
+}
+
+aside {
+    background: darksalmon;
+    display: inline-block;
+    text-align: center;
+    border: 5px dotted black;
+    font-size: 20px;
+    width: 20%;
+}

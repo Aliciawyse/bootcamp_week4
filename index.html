@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Crystal Collector Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body>
 
+<h1>Number to Guess: <span id="numberToGuess"></span></h1>
+
+<div class = "shape" value="1" id = "square"></div>
+<div class = "shape" value="2" id = "rectangle"></div>
+<div class = "shape" value="3" id = "circle"></div>
+<div class = "shape" value="4" id = "triangle"></div>
+
+<h2>Your total score is: <span id = "totalScore"></span></h2>
+
+<aside>
+
+    <div id="winner"></div>
+    <div id="loser"></div>
+    <p>Wins: <span id = "winCounter"></span></p>
+    <p>Losses:<span id = "loseCounter"></span></p>
+
+</aside>
+
+
+
+<script src = "assets/javascript/game.js"></script>
 </body>
 </html>
