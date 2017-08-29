@@ -41,14 +41,16 @@ function totalScoreUpdate (theIdofCrystal) {
 //function to check if game won or lost
 function checkGameStatus() {
     if (totalScore > computerNumber) {
-        updateScreen("loser","Uh-oh, you lost the game.");
+        updateScreen("loser","You lost this game.");
         lose = lose + 1;
         updateScreen("loseCounter", lose);
+        startGame();
 
     } else if (totalScore === computerNumber) {
-        updateScreen("winner","You won the game!");
+        updateScreen("loser","You won this game!");
         wins = wins +1;
         updateScreen("winCounter", wins);
+        startGame();
     }
 }
 
@@ -75,4 +77,4 @@ function startGame(){
 
 startGame();
 
-//TODO: upon winning.. update divs and increment total wins and total losses. You need variables for wins and losses.
+//TODO: upon winning or losing, reset Total score, get new random number
