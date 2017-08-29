@@ -41,13 +41,13 @@ function totalScoreUpdate (theIdofCrystal) {
 //function to check if game won or lost
 function checkGameStatus() {
     if (totalScore > computerNumber) {
-        updateScreen("loser","You lost this game.");
+        updateScreen("playerStatus","You lost this game.");
         lose = lose + 1;
         updateScreen("loseCounter", lose);
         startGame();
 
     } else if (totalScore === computerNumber) {
-        updateScreen("loser","You won this game!");
+        updateScreen("playerStatus","You won this game!");
         wins = wins +1;
         updateScreen("winCounter", wins);
         startGame();
