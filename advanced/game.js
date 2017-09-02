@@ -5,6 +5,9 @@ $(".playerOptions").click(function(event) {
     //look for class it currently has
     //if it's player make it
 
+    console.log(event);
+
+
 
     for (var i = 0; i < this.classList.length ; i++) {
         //console.log(this.classList[i]);
@@ -18,11 +21,6 @@ $(".playerOptions").click(function(event) {
                     $("#" + playerIDs[j] ).addClass( "enemy" );
                     $("#" + playerIDs[j] ).removeClass( "player" );
                     $("#enemy").append($("#" + playerIDs[j] ));
-
-
-
-
-                    //add class
                 }
             }
 
@@ -32,7 +30,11 @@ $(".playerOptions").click(function(event) {
             $("#" + this.id).removeClass( "enemy" );
             $("#defender").append($("#" + this.id ));
 
-        } else if (this.classList[i] === "defender") {
+        } else if (this.classList[i] === "defender" ) {
+
+            $("#" + this.id).addClass( "enemy" );
+            $("#" + this.id).removeClass( "defender" );
+            $("#enemy").append($("#" + this.id ));
 
         }
     }
@@ -44,18 +46,18 @@ $(".playerOptions").click(function(event) {
 
 });
 
+console.log("hi",$("div:last").html().length);
+console.log($("div:last").html());
+
+if ( $('#defender').children().length === 0) {
+    console.log("ein");
+}
+
+//if  ($("div:last").html().length === 2) {
+//    console.log("Hi!");
+//}
+
+console.log("hi");
 
 //TODO check inner html of defender to see if anything is there. If it is, need to move it up b4 moving anything down.
 
-//what are the common questions folks have with product
-//appy those skills to the product for the customers.
-
-//making better product for company
-//being a team lead
-//go into product management
-
-//self starter, 9-5 don't need someone to tell me what to do...
-
-//he needs someone who can hit the ground running...
-
-//if I notice trends
