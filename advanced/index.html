@@ -10,16 +10,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-
 <h1 class = "Title">Star Wars RPG!</h1>
 
 <h2>Your character</h2>
+
 <div class = "flexContainer" id = "player">
 
-    <div id = "obi" class = "playerOptions player flexItem">Obi</div>
-    <div id = "luke" class = "playerOptions player flexItem">Luke</div>
-    <div id = "darth" class = "playerOptions player flexItem">Darth</div>
-    <div id = "mimi" class = "playerOptions player flexItem">Mimi</div>
+    <div id = "obi" class = "playerOptions player flexItem">
+        Obi <p id = "obiHealth" ></p>
+    </div>
+
+    <div id = "luke" class = "playerOptions player flexItem">
+        Luke <p id = "lukeHealth" ></p>
+    </div>
+
+    <div id = "darth" class = "playerOptions player flexItem">
+        Darth <p id = "darthHealth" ></p>
+    </div>
+
+    <div id = "mimi" class = "playerOptions player flexItem">
+        Mimi <p id = "mimiHealth" ></p>
+    </div>
 
 </div>
 
@@ -33,12 +44,14 @@
 
 <h2>Fight Section</h2>
 
-<button>Attack</button>
+<button id = "attack">Attack</button>
 
 
 <h2>Defender</h2>
 <div class = "flexContainer" id = "defender">
 </div>
+
+<div -d = "emptyDiv"></div>
 
 
 
