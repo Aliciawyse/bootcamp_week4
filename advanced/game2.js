@@ -11,6 +11,18 @@ var darthAttack =  20;
 var mimiHealth = 180;
 var mimiAttack = 25;
 
+
+function player(healthPoints, attackPower, counterAttackPower) {
+    this.health = healthPoints;
+    this.attack = attackPower;
+    this.counter = counterAttackPower;
+}
+
+
+var hero = new player(120,8,10);
+
+
+
 var unlockGame = false;
 
 document.getElementById("obiHealth").innerHTML = obiHealth;
@@ -41,6 +53,7 @@ $("#player").click(function(event) {
             $("#" + allFourChildren[i].id).addClass( "enemy" );
 
             $("#enemy").append(allFourChildren[i]);
+
         }
     }
 });
@@ -65,6 +78,7 @@ $("#enemy").click(function(event) {
 
             unlockGame = true;
 
+
         }
     }
 });
@@ -73,7 +87,14 @@ $("#enemy").click(function(event) {
 $("#attack").click(function() {
 
     if (unlockGame === true) {
-        console.log("hi");
+
+        //console.log(chosenCharacter);
+
+
+
+
+
+
     }
 
 
